@@ -15,6 +15,9 @@ struct Node
     value = v;
     next = n;
   }
+  Node(){
+    next = nullptr;
+  }
 };
 
 void split(Node*& in, Node*& odds, Node*& evens);
