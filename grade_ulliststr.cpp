@@ -490,7 +490,7 @@ TEST(ListRemove, 50ElementsFromFront)
 	std::vector<std::string> contents(makeRandomAlphaStringVector(numElements, origSeed, 12, true));
 
 	ULListStr * list = makeList(contents);
-
+ 
 	for(size_t counter = 0; counter < contents.size(); ++counter)
 	{
 		list->pop_front();

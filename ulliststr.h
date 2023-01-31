@@ -46,6 +46,11 @@ class ULListStr {
   size_t size() const;
 
   /**
+   * Returns the current number of nodes in the list (NOT the number of strings)
+   */
+  int numNodes();
+
+  /**
    * Returns true if the list is empty, false otherwise
    *   - MUST RUN in O(1)
    */
@@ -130,6 +135,7 @@ class ULListStr {
   Item* head_;
   Item* tail_;
   size_t size_;
+  int numNodes_;
 };
 
 #endif
